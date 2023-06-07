@@ -1,10 +1,10 @@
 const deepCopy = require('./fn');
 
-let obj = { name: 'Han' };
+let obj = { name: 'Han', job: { name: 'Sales' } };
 let testTarget = deepCopy(obj);
-testTarget.name = '이경한';
+testTarget.job.name = 'FE';
 
 test('test', () => {
-  console.log(obj.name, testTarget.name);
-  expect(obj.name).toBe(testTarget.name);
+  console.log(obj.job, testTarget.job);
+  expect(obj.job).toBe(testTarget.job);
 });
