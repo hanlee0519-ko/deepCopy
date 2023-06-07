@@ -1,5 +1,5 @@
 function deepCopy(obj) {
-  return obj;
+  return { ...obj };
 }
 
 module.exports = deepCopy;

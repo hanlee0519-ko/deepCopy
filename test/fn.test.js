@@ -1,8 +1,8 @@
 const deepCopy = require('./fn');
 
-let obj = { name: '이경한' };
+let obj = { name: 'Han' };
 let testTarget = deepCopy(obj);
-testTarget.name = 'HAN';
+testTarget.name = '이경한';
 
 test('test', () => {
   console.log(obj.name, testTarget.name);
